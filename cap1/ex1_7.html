@@ -1,0 +1,8 @@
+<meta charset="UTF-8">
+<script>
+   alert('Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x')
+   var preço = Number(prompt('Preço da compra: R$ ').replace(',','.'))
+   var vista = preço*0.9
+   var parcelado = preço/3
+   alert(`A vista: R$ ${(vista).toFixed(2)} \nOu 3x de R$ ${(parcelado).toFixed(2)}`)
+</script>

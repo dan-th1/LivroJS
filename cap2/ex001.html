@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento. Indica que é um arquivo HTML5 -->
+<html lang="pt-br"> <!-- Início do documento HTML e definição do idioma como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, permitindo acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o layout se ajustar corretamente em dispositivos móveis -->
+    <title>Document</title> <!-- Título da página que aparece na aba do navegador -->
+</head>
+<body> <!-- Início do corpo da página, onde o conteúdo visível é inserido -->
+
+    <h1>Olá Mundo !</h1> <!-- Título principal da página -->
+
+    <p>
+        Nome: 
+        <input type="text" id="nome">  <!-- Campo de texto para o usuário digitar seu nome 
+                                            type="text" define que é um campo de texto
+                                            id="nome" é o identificador único desse campo, usado no JavaScript -->
+
+        <input type="button" value="mostrar" onclick="mostrarOla()"> <!-- Botão com o texto "mostrar"
+                                                                          onclick="mostrarOla()" define que ao clicar no botão, a função mostrarOla será chamada -->
+
+        <p id="resposta"></p>  <!-- Parágrafo vazio com id "resposta", onde será exibida a mensagem após o clique no botão -->
+    </p>    
+
+<script> <!-- Início do código JavaScript -->
+        function mostrarOla() {
+            // Função chamada quando o botão é clicado
+
+            var nome = document.getElementById('nome').value 
+            // Pega o valor digitado no campo de texto com id "nome" e armazena na variável 'nome'
+
+            document.getElementById('resposta').textContent = `Seja bem vindo, ${nome}`
+            // Acessa o elemento com id "resposta" e insere a mensagem personalizada usando template string
+        }
+</script> 
+
+</body>
+</html>
