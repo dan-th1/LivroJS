@@ -1,0 +1,77 @@
+/* Define estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define uma fonte limpa e legível */
+    background-color: #f0f0f0;      /* Define uma cor de fundo clara */
+    margin: 0;                      /* Remove margens padrão do navegador */
+    padding: 0;                     /* Remove preenchimento padrão */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #4CAF50;     /* Define uma cor de fundo verde */
+    color: white;                  /* Define a cor do texto como branco */
+    padding: 20px 0;               /* Adiciona espaçamento vertical interno */
+    text-align: center;           /* Centraliza o texto */
+    max-width: 600px;
+    margin: 0 auto;                /* Centraliza o cabeçalho na página */
+    border-radius: 30px;
+    border: solid black;
+}
+
+/* Estiliza a seção principal da página */
+section {
+    max-width: 600px;              /* Limita a largura da seção */
+    margin: 40px auto;             /* Centraliza a seção com margem acima e abaixo */
+    background-color: white;       /* Define fundo branco para a área de conteúdo */
+    padding: 30px;                 /* Adiciona preenchimento interno */
+    border-radius: 10px;           /* Arredonda as bordas da seção */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona uma sombra sutil */
+}
+#foto{
+    width: 230px;                  /* Define a largura da imagem */
+    height: 230px;                 /* Define a altura da imagem */
+    border-radius: 100%;            /* Torna a imagem circular */
+    display: block;                /* Exibe a imagem como bloco */
+    margin: 0 auto 20px;          /* Centraliza a imagem e adiciona margem abaixo */
+}
+
+/* Estiliza o formulário de entrada */
+#formulario {
+    display: flex;                 /* Usa flexbox para organizar os elementos */
+    flex-direction: column;       /* Coloca os elementos em coluna */
+    gap: 10px;                     /* Espaçamento entre os elementos */
+    margin-bottom: 20px;          /* Espaço abaixo do formulário */
+}
+
+/* Estiliza os inputs do tipo number */
+input[type="number"] {
+    padding: 8px;                  /* Espaçamento interno */
+    border: 1px solid #ccc;        /* Borda cinza clara */
+    border-radius: 5px;            /* Borda levemente arredondada */
+    font-size: 16px;               /* Aumenta o tamanho da fonte */
+}
+
+/* Estiliza o botão de calcular média */
+#btnCalcular {
+    padding: 10px;                 /* Espaçamento interno */
+    background-color: #4CAF50;     /* Cor de fundo verde igual ao cabeçalho */
+    color: white;                  /* Texto branco */
+    border: none;                  /* Remove borda padrão */
+    border-radius: 5px;            /* Arredonda as bordas */
+    cursor: pointer;              /* Altera o cursor ao passar sobre o botão */
+    font-weight: bold;            /* Deixa o texto em negrito */
+    transition: background-color 0.3s ease; /* Anima a mudança de cor */
+}
+
+/* Efeito de hover no botão */
+#btnCalcular:hover {
+    background-color: #29462b;     /* Escurece o botão ao passar o mouse */
+}
+
+/* Estiliza o parágrafo de resultado */
+#resultado {
+    font-size: 18px;               /* Aumenta o tamanho da fonte */
+    font-weight: bold;            /* Deixa o texto em negrito */
+    color: #333;                   /* Define uma cor de texto escura */
+    text-align: center;           /* Centraliza o texto */
+}
